@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="email_template_preview_form" model="Email_templatePreview" >
+                <form string="Email Preview">
+                    <field name="model_id" invisible="1"/>
+                    <h3>Preview of <field name="name" readonly="1" nolabel="1" class="oe_inline"/></h3>
+                    Choose an example <field name="model_id" class="oe_inline" readonly="1"/> record:
+                    <field name="res_id" class="oe_inline" style="margin-left: 8px;"/>
+                    <group>
+                        <field name="subject" readonly="1"/>
+                        <field name="email_from" readonly="1"
+                                attrs="{'invisible':[('email_from','=',False)]}"/>
+                        <field name="partner_ids" widget="many2many_tags" readonly="1"/>
+                        <field name="email_to" readonly="1"
+                                attrs="{'invisible':[('email_to','=',False)]}"/>
+                        <field name="email_cc" readonly="1"
+                                attrs="{'invisible':[('email_cc','=',False)]}"/>
+                        <field name="reply_to" readonly="1"
+                                attrs="{'invisible':[('reply_to','=',False)]}"/>
+                        <field name="scheduled_date" readonly="1"
+                                attrs="{'invisible':[('scheduled_date','=',False)]}"/>
+                    </group>
+                    <field name="body_html" widget="html" readonly="1"
+                            nolabel="1" options='{"safe": True}'/>
+                    <field name="attachment_ids" widget="many2many_binary" readonly="1"/>
+                    <footer>
+                        <button string="Discard" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </view>
+        <action id="wizard_email_template_preview" type="ir.actions.act_window" name="Template Preview" model="Email_templatePreview" view_mode="form" view_id="email_template_preview_form"></action>
+    </data>
+</hexya>

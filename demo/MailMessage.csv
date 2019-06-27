@@ -1,0 +1,116 @@
+ID,model,res_id,body,message_type,subtype_id,author_id,date,parent_id,subject,email_from,partner_ids,attachment_ids
+mail_message_channel_1_1,mail.channel,mail.channel_1,<![CDATA[<p>Selling a training session and selling the products after the training session is more efficient than directly selling a pack with the training session and the products.</p>]]>,comment,mt_comment,base.partner_demo,,
+mail_message_channel_1_2,mail.channel,mail.channel_1,<![CDATA[<p>I noted I can not manage efficiently my pipeline when I have more than 50 opportunities in the qualification stage.</p><p>Any advice on this? How do you organize your activities with more than 50 opportunities?</p>]]>,comment,mt_comment,base.partner_root,,
+mail_message_channel_1_2_1,mail.channel,mail.channel_1,<![CDATA[<p>When I have too much opportunities in the pipe, I start communicating with prospects more by email than phonecalls.</p><p>I send an email to create a sense of emergency, like <i>"can I call you this week about our quote?"</i> and I call only those that answer this email.</p><p>You can use the email template feature of Odoo to automate email composition.</p>]]>,comment,mt_comment,base.partner_demo,,mail_message_channel_1_2
+mail_message_channel_whole_1,mail.channel,mail.channel_all_employees,<![CDATA[
+<p>
+    Great news!<br/>
+    Our company has received the Deloitte Fast 50 award.  We are the fastest
+    growing company of the country, with a growth of 1549% over the past 5
+    years. You can get more information <a href="http://www.openerp.com/node/1244/2012/10">on our blog</a>.
+</p>
+]]>,comment,,base.partner_demo,,
+mail_message_channel_whole_2,mail.channel,mail.channel_all_employees,<![CDATA[<p>Your monthly meal vouchers arrived. You can get them at the HR's office.</p>
+<p>This month you also get 250 EUR of eco-vouchers if you have been in the company for more than a year.</p>]]>,comment,,base.partner_demo,,
+mail_message_channel_whole_2_1,mail.channel,channel_all_employees,<![CDATA[<p>Thanks! Could you please remind me where is Christine's office, if I may ask? I'm new here!</p>]]>,comment,,base.partner_root,,mail_message_channel_whole_2
+mail_message_channel_whole_2_2,mail.channel,channel_all_employees,<![CDATA[<p>Building B3, second floor on the right :-).</p>]]>,comment,,base.partner_demo,,mail_message_channel_whole_2
+mail_message_channel_2_1,mail.channel,mail.channel_2,<![CDATA[
+<p>
+    Dear Board Members,
+</p>
+<p>
+    The main events of the month of October are:
+</p>
+<p>
+    <b>Sales:</b>
+</p>
+<ul>
+    <li>Invoicing is respectively of 442k€ for our European company (66% of the budget) and $404k for the U.S. office (75% of the budget). Despite these numbers that are far bellow our initial expectations, the growth of the month of October is 51% compared to last year.</li>
+    <li>The month of September having been better than our initial forecasts, the consolidated yearly revenue is only of $20k bellow our forecast made during the board of September.</li>
+    <li>The consolidated forecast for the end of the year is $6.749k, which is a growth of 76% compared to last year and an achievement of 87% of the budget.</li>
+    <li>The recruitment of new resellers has been very good, especially in Europe, where we signed 30 new resellers this month.</li>
+</ul>
+<p>
+    <b>Finance :</b>
+</p>
+<ul>
+    <li>The profit and loss has been negatively impacted this month by revenues that are far beyond the budget and charges that are 15% above the budget. The main extra we had in our charges this month is due to the provisioning of the salaries for the holidays period, $50k.</li>
+    <li>We also got the payment of our long awaited subsidies, the cash level has increased of 300K€ which gives a current balance of 963 K€ without including the straight loan of 350 K€.</li>
+    <li>The aged customer balance has been similar to the one of the last month with a small decrease of the DSO. We have recruited a new accountant assistant for the credit collection. She is mostly doing phone calls for all invoices that are due since 30 days, so we should get improvements of the DSO in November. The sum of the invoicing on which we have a risk in the aged customer balance is 100K€.</li>
+</ul>
+<p>
+    <b>Resellers and Customers:</b>
+</p>
+<ul>
+    <li>The total number of resellers is 429, across 87 countries.</li>
+    <li>The total number of installations of our software increased to 37K, against 33K for the month of September but we still did not reached the highest level we reached during this year (44K in march and may)</li>
+    <li>We have passed the 10000th customer in production with 10271 customers at the end of October. The paying customer ratio is 6,6%.</li>
+</ul>
+<p>
+    <b>Launch of the new release:</b>
+</p>
+<p>
+    We are working actively on the new release which is scheduled for the end of November.
+</p>
+<ul>
+    <li>We will publish the release note this week</li>
+    <li>The whole sales team will be trained on the new version this Friday</li>
+    <li>We will do a public announce to our resellers the 21th of November. We plan to show them: a description of the new features, the new distribution strategy, the new pricing and the communication plan.</li>
+</ul>
+<br/>
+<p>
+    Nicolas, can you book a meeting room for our meeting of Friday 2pm?
+</p>
+<p>
+    Regards.
+</p>
+]]>,comment,mt_comment,base.partner_demo,,
+msg_discus5,,,<p>Hello,</p>
+<p>We need to deploy new backup servers, with the following requirements:</p>
+<ul>
+    <li>daily incremental backups, with an history of 15 days,</li>
+    <li>45 servers should be backuped between 1am and 3am when our offices are closed,</li>
+    <li>two redundant servers,</li>
+    <li>total capacity of 200Gb.</li>
+</ul>
+<p>
+    Do you have a simple solution with servers running on Redhat Linux?
+</p>
+<p>Best regards,</p>
+<pre>-- 
+Virginie Agrolait
+virginie@agrolait.fr</pre>,email,mt_comment,,,,Plan to install backup servers,virginie@agrolait.fr,,
+msg_discus1,,,<![CDATA[<p>Hi Virginie,</p><p>I wrote to you about our <i>On Site Assistance Service</i> that we delivered to Agrolait last week. Do you have any feedback or remark about our service? I noticed you requested new IP phones. Will it be used for new employees, or did you have any issue with the ones we provided?<br />Best regards,</p>]]>,comment,mt_comment,base.partner_root,,,Feedback about our On Site Assistance,,,
+msg_discus4,,,<![CDATA[<p>Hi Demo,</p>
+            <p>The next version of our products catalog is scheduled for next month. Our product team send me their updated document holding the prices and costs, and I updated our catalog.</p>
+            <p>You will find it in attachment, as well as a comparative benchmark of the different solutions currently existing on the market.<br />Have a nice reading!<br />
+            Sincerely,</p>]]>,comment,mt_comment,base.partner_root,,,,,,
+msg_discus2,,,<![CDATA[<p>Hello,</p><p>Epic Technologies is a small company specialized in software managing huge volume of data. Having an efficient and reliable backup system is very important for us, and critical for our customers. I eared you have some interesting solutions to manage our backups. Could we meet each other as soon as possible to discuss our need? Here is a first list of requirements:</p>
+            <ul>
+                <li>about 25 backup servers, running on Redhat Linux</li>
+                <li>minimum 200Gb of storage per server</li>
+                <li>setup a VPN between all our servers in New York and Chicago</li>
+            </ul>
+            <p>Thanks,</p>
+            ]]>,comment,mt_comment,base.res_partner_3,,,Information meeting,,,
+msg_discus6,,,<![CDATA[<p>Hello Demo,</p>
+            <p>We have a lot of inquiries about our now solution based on RedHat servers. However I do not have the updated specification ready at hand.</p>
+            <p>Could you please send me the last version of the file asap?</p>
+            <p>Thanks,</p>]]>,comment,mt_comment,base.partner_root,,,RedHat server updated spec,,,
+msg_discus6_1,,,
+<p>Sure, here it is. Have a nice day!</p>
+<p class="gmail_extra"><p>Hello Demo,</p>
+    <p>-- Original mail stripped --</p></p>,comment,mt_comment,base.partner_demo,,msg_discus6,,,,
+msg_discus6_2,,,<![CDATA[<p>I just found a more recent draft of the spec. Jon did some cleaning in the specifications. Could you merge the two documents to have an updated one?</p><p>When it's done, put it on the internal document management system.</p><p>Thanks,</p>]]>,comment,mt_comment,base.partner_demo,,msg_discus6,,,,
+msg_discus3,,,<![CDATA[<p>Hello,</p><p>I have a friend working at Epic Technologies. He told me they plan to upgrade their backup servers within the next 3 months.</p><p>I think that someone should contact them and check if there is an opportunity.</p>]]>,comment,mt_comment,base.partner_demo,,,,,,
+msg_discuss4_1,,,<![CDATA[<p>Thank you!<br/>Could you send me the updated pricelists as negotiated at the beginning of this year?</p>
+            <p>Sincerely,</p>]]>,comment,mt_comment,base.partner_demo,,msg_discus4,,,,
+msg_discus3_1,,,<![CDATA[Contact Chris: +1 (650) 307-6736.]]>,comment,mt_comment,base.partner_demo,,msg_discus3,,,,
+msg_discus2_1,,,<![CDATA[<p>Hello Epic!</p>
+            <p>I am glad you are interested in our products. Indeed, we are have several backup solutions that should meet your requirements. In order to prepare a detailed offer, we will have to discuss several technical points about your needs and the context of your data management.</p>
+            <p>I propose to have a meeting tomorrow at 2 PM. Does it seem suitable for you ?<br />Best regards,</p>]]>,comment,mt_comment,base.partner_root,,msg_discus2,RE: Information meeting,,,
+msg_discus2_2,,,<![CDATA[<p>It is not possible for me to come tomorrow at 2 PM. Maybe at 4 PM?</p>]]>,comment,mt_comment,base.res_partner_3,,msg_discus2,RE: Information meeting,,,
+msg_discus2_3,,,<![CDATA[<p>4 PM is fine! See you tomorrow!<br />Best regards,</p>]]>,comment,mt_comment,base.partner_root,,msg_discus2,RE: Information meeting,,,
+msg_discus2_4,,,<![CDATA[<p>Ok! See you tomorrow.</p>]]>,comment,mt_comment,base.res_partner_3,,msg_discus2,RE: Information meeting,,,
+msg_discus1_1,,,<![CDATA[<p>Hello Administrator,</p><p>Glad to hear from you! Everything is perfect, thanks for asking. Concerning the order of 2 IP phones, I ordered them for new employees. We are satisfied with the products of <i>YourCompany</i>, and we plan to fit out each new employee with one of your phone this year.<br />Regards,</p>]]>,comment,mt_comment,base.res_partner_2,,msg_discus1,RE: Feedback about our On Site Assistance,,,
+msg_discus0,,,<![CDATA[<p>Hello Administrator,</p><p>A small email to inform you that we will have a meeting with Mr Demo next Tuesday. Everything is under control!<br />Regards,</p>]]>,comment,mt_comment,base.res_partner_1,,,FWD: Meeting with Demo ,,,

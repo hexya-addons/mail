@@ -1,0 +1,2 @@
+ID,name,tag,res_model,params
+mail_channel_action_client_chat,Chat,mail.chat.instant_messaging,mail.channel,

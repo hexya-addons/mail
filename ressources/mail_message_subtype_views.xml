@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="view_message_subtype_tree" model="MailMessageSubtype" >
+                <tree string="Subtype">
+                    <field name="name"/>
+                    <field name="sequence"/>
+                    <field name="res_model"/>
+                    <field name="default"/>
+                </tree>
+            </view>
+	<view id="view_mail_message_subtype_form" model="MailMessageSubtype" >
+                <form string="Email message">
+                    <sheet>
+                        <group>
+                            <group string='Description'>
+                                <field name="name"/>
+                                <field name="sequence"/>
+                                <field name="res_model"/>
+                                <field name="description"/>
+                                <field name="default"/>
+                                <field name="internal"/>
+                                <field name="hidden"/>
+                            </group>
+                            <group string='Auto subscription'>
+                                <field name="parent_id"/>
+                                <field name="relation_field"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </view>
+	<action id="action_view_message_subtype" type="ir.actions.act_window" name="Subtypes" model="MailMessageSubtype" view_mode="tree,form" >
+    </data>
+</hexya>

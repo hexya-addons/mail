@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="view_emails_partner_info_form" model="ResPartner" >
+                <xpath expr="//field[@name='user_id']" position="after">
+                    <field name='notify_email' widget="radio" groups="base.group_no_one"/>
+                    <field name="opt_out" string="Mailing Opt-Out" groups="base.group_no_one"/>
+                    <field name="message_bounce" groups="base.group_no_one"/>
+                </xpath>
+                <xpath expr="//sheet" position="after">
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread" options='{"thread_level": 1}'/>
+                    </div>
+                </xpath>
+            </view>
+	<view id="res_partner_opt_out_search" model="ResPartner" >
+                    <filter name="supplier" position="after">
+                        <separator />
+                        <filter string="Available for mass mailing"
+                                name='not_opt_out' domain="[('opt_out', '=', False)]"
+                                help="Partners that did not ask not to be included in mass mailing campaigns" />
+                    </filter>
+            </view>
+	<view id="email_template_partner" type="mail.template" name="Partner Mass Mail" >
+	<view id="email_template_partner" type="mail.template" >
+    </data>
+</hexya>

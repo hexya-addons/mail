@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="view_followers_tree" model="MailFollowers" >
+                <tree string="Followers">
+                    <field name="res_model"/>
+                    <field name="res_id"/>
+                    <field name="partner_id"/>
+                </tree>
+            </view>
+	<view id="view_mail_subscription_form" model="MailFollowers" >
+                <form string="Followers Form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="res_model"/>
+                                <field name="partner_id"/>
+                            </group>
+                            <group>
+                                <field name="res_id"/>
+                                <field name="subtype_ids" widget="many2many_tags"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </view>
+	<action id="action_view_followers" type="ir.actions.act_window" name="Followers" model="MailFollowers" view_mode="tree,form" >
+    </data>
+</hexya>

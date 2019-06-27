@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<action id="mail_shortcode_action" type="ir.actions.act_window" name="Chat Shortcode" model="MailShortcode" view_mode="tree,form" >
+	<view id="mail_shortcode_view_tree" model="MailShortcode" >
+                <tree string="Shortcodes">
+                    <field name="source"/>
+                    <field name="substitution"/>
+                    <field name="description"/>
+                </tree>
+            </view>
+	<view id="mail_shortcode_view_form" model="MailShortcode" >
+                <form string="Shortcodes">
+                    <sheet>
+                       <group>
+                            <field name="source"/>
+                            <field name="substitution"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </view>
+    </data>
+</hexya>

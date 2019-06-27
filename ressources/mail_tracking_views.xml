@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="view_mail_tracking_value_tree" model="MailTrackingValue" >
+                <tree string="Tracking Value">
+                    <field name="field"/>
+                    <field name="old_value_integer"/>
+                    <field name="old_value_float"/>
+                    <field name="old_value_char"/>
+                    <field name="old_value_text"/>
+                    <field name="old_value_datetime"/>
+                    <field name="new_value_integer"/>
+                    <field name="new_value_float"/>
+                    <field name="new_value_char"/>
+                    <field name="new_value_text"/>
+                    <field name="new_value_datetime"/>
+                    <field name="mail_message_id"/>
+                </tree>
+            </view>
+	<view id="view_mail_tracking_value_form" model="MailTrackingValue" >
+                <form string="Tracking Value">
+                    <sheet>
+                        <group>
+                            <group string='Change'>
+                                <field name="field"/>
+                                <field name="field_desc"/>
+                                <field name="field_type"/>
+                                <field name="old_value_integer"/>
+                                <field name="old_value_float"/>
+                                <field name="old_value_char"/>
+                                <field name="old_value_text"/>
+                                <field name="old_value_datetime"/>
+                                <field name="new_value_integer"/>
+                                <field name="new_value_float"/>
+                                <field name="new_value_char"/>
+                                <field name="new_value_text"/>
+                                <field name="new_value_datetime"/>
+                            </group>
+                            <group string='Related Message'>
+                                <field name="mail_message_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </view>
+	<action id="action_view_mail_tracking_value" type="ir.actions.act_window" name="Tracking Values" model="MailTrackingValue" view_mode="tree,form" >
+    </data>
+</hexya>

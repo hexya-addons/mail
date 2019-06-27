@@ -1,0 +1,26 @@
+ID,source,substitution,description,shortcode_type
+mail_smiley_smile,:),&lt;img src='/mail/static/src/img/smiley/smile.png'/&gt;,Emoji Smile,image
+mail_smiley_sad,:(,&lt;img src='/mail/static/src/img/smiley/sad.png'/&gt;,Emoji Sad,image
+mail_smiley_laugh,:D,&lt;img src='/mail/static/src/img/smiley/laugh.png'/&gt;,Emoji Laugh,image
+mail_smiley_wink,;),&lt;img src='/mail/static/src/img/smiley/wink.png'/&gt;,Emoji Wink,image
+mail_smiley_stuck,O_0,&lt;img src='/mail/static/src/img/smiley/stuck_out_tongue.png'/&gt;,Emoji Stuck Out Tongue Winking Eye,image
+mail_smiley_scream,:@,&lt;img src='/mail/static/src/img/smiley/scream.png'/&gt;,Emoji Scream,image
+mail_smiley_neutral,:|,&lt;img src='/mail/static/src/img/smiley/neutral.png'/&gt;,Emoji Speechless/Neutral face,image
+mail_smiley_cheeky,:p,&lt;img src='/mail/static/src/img/smiley/yum.png'/&gt;,Emoji Cheeky,image
+mail_smiley_confused,:/,&lt;img src='/mail/static/src/img/smiley/confused.png'/&gt;,Emoji Confused,image
+mail_smiley_open_mouth,:O,&lt;img src='/mail/static/src/img/smiley/open_mouth.png'/&gt;,Emoji Open Mouth,image
+mail_smiley_heart,&lt;3,&lt;img src='/mail/static/src/img/smiley/heart.png'/&gt;,Emoji Heart,image
+mail_smiley_thumbsup,:+1,&lt;img src='/mail/static/src/img/smiley/thumbsup.png'/&gt;,Emoji Thumbs Up,image
+mail_smiley_thumbsdown,:-1,&lt;img src='/mail/static/src/img/smiley/thumbsdown.png'/&gt;,Emoji Thumbs Down,image
+mail_smiley_kitten,:kitten,&lt;img src='/mail/static/src/img/smiley/cat.png'/&gt;,Emoji Kitten,image
+mail_smiley_pinky,:pinky,&lt;img src='/mail/static/src/img/smiley/pinky.png'/&gt;,Emoji Pinky,image
+mail_smiley_musti,:musti,&lt;img src='/mail/static/src/img/smiley/musti.png'/&gt;,Emoji Musti,image
+mail_smiley_man_with_turban,:turban,&lt;img src='/mail/static/src/img/smiley/man_with_turban.png'/&gt;,Emoji Man With Turban,image
+mail_smiley_troll,:troll,&lt;img src='/mail/static/src/img/smiley/trollface.png'/&gt;,Emoji Troll Face,image
+mail_smiley_boar,:boar,&lt;img src='/mail/static/src/img/smiley/boar.png'/&gt;,Emoji Boar,image
+mail_smiley_poop,:poop,&lt;img src='/mail/static/src/img/smiley/poop.png'/&gt;,Emoji Poop,image
+mail_smiley_cookie,:cookie,&lt;img src='/mail/static/src/img/smiley/cookie.png'/&gt;,Emoji Cookie,image
+mail_smiley_postal_horn,:postal_horn,&lt;img src='/mail/static/src/img/smiley/postal_horn.png'/&gt;,Emoji Postal Horn,image
+mail_smiley_ghost,:ghost,&lt;img src='/mail/static/src/img/smiley/ghost.png'/&gt;,Emoji Ghost,image
+mail_smiley_beer,:beer,&lt;img src='/mail/static/src/img/smiley/beer.png'/&gt;,Emoji Beer,image
+mail_smiley_man,:man,&lt;img src='/mail/static/src/img/smiley/man.png'/&gt;,Emoji Man,image

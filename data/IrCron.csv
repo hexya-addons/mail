@@ -1,0 +1,3 @@
+ID,name,user_id,interval_number,interval_type,numbercall,doall,model,function,args,active,nextcall,priority
+ir_cron_mail_scheduler_action,Email Queue Manager,base.user_root,1,hours,-1,,,,,,,
+ir_cron_module_update_notification,Update Notification,base.user_root,1,weeks,-1,,,,,,,1000
