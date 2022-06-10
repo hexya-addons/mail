@@ -1,0 +1,6 @@
+ID,name,icon,sequence,delay_count,decoration_type
+mail_activity_data_email,Email,fa-envelope,3,,
+mail_activity_data_call,Call,fa-phone,6,2,
+mail_activity_data_meeting,Meeting,fa-users,9,,
+mail_activity_data_todo,To Do,fa-tasks,12,5,
+mail_activity_data_warning,Exception,fa-warning,99,0,warning

@@ -1,0 +1,2 @@
+ID,name,tag,res_model,params
+action_discuss,Discuss,mail.discuss,mail.channel,

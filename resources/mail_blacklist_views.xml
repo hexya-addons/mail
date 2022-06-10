@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="mail_blacklist_view_tree" model="MailBlacklist" >
+            <tree string="Email Blacklist">
+                <field name="create_date" string="Blacklist Date"/>
+                <field name="email"/>
+            </tree>
+        </view>
+	<view id="mail_blacklist_view_form" model="MailBlacklist" >
+            <form string="Add Email Blacklist" duplicate="false" edit="false">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                            <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="email"/>
+                        </group>
+                        <group>
+                            <field name="create_date" readonly="1"  string="Creation Date" attrs="{'invisible':[('create_date','=',False)]}"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </view>
+	<view id="mail_blacklist_view_search" model="MailBlacklist" >
+            <search>
+                <field name="email"/>
+                <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
+            </search>
+        </view>
+	<action id="mail_blacklist_action" type="ir.actions.act_window" name="Blacklist" model="MailBlacklist" view_id="mail_blacklist_view_tree"></action>
+    </data>
+</hexya>

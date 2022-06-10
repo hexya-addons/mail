@@ -1,0 +1,4 @@
+ID,name,model_id,state,code,user_id,interval_number,interval_type,numbercall,doall,nextcall,priority
+ir_cron_mail_scheduler_action,Mail: Email Queue Manager,model_mail_mail,code,model.process_email_queue(),base.user_root,1,hours,-1,,,
+ir_cron_module_update_notification,Publisher: Update Notification,model_publisher_warranty_contract,code,model.update_notification(None),base.user_root,1,weeks,-1,,,1000
+ir_cron_mail_notify_channel_moderators,Mail: Notify channel moderators,model_mail_message,code,model._notify_moderators,base.user_root,1,days,-1,,,1000

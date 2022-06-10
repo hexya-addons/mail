@@ -1,0 +1,3 @@
+ID,model,res_id,message_type,subtype_id,subject,body
+module_install_notification,mail.channel,mail.channel_all_employees,email,mail.mt_comment,Welcome to Odoo!,<![CDATA[<p>Welcome to the #general channel.</p>
+            <p>This channel is accessible to all users to <b>easily share company information</b>.</p>]]>

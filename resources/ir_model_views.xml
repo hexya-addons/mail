@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="model_form_view" model="IrModel" >
+            <field name="transient" position="after">
+                <field name="is_mail_thread" attrs="{'readonly': [('state','!=', 'manual')]}" groups="base.group_no_one"/>
+            </field>
+            <xpath expr="//field[@name='field_id']//field[@name='copied']" position="after">
+                <field name="track_visibility" attrs="{'readonly': [('state','!=', 'manual')]}"/>
+            </xpath>
+        </view>
+	<view id="model_search_view" model="IrModel" >
+            <field name="model" position="after">
+                <filter string="Mail Thread" name="is_mail_thread" domain="[('is_mail_thread', '=', True)]"/>
+            </field>
+        </view>
+	<view id="field_form_view" model="IrModelFields" >
+            <field name="copied" position="after">
+                <field name="track_visibility" attrs="{'readonly': [('state','!=', 'manual')]}"/>
+            </field>
+        </view>
+    </data>
+</hexya>

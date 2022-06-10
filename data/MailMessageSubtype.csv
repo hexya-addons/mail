@@ -1,0 +1,4 @@
+ID,name,sequence,default,internal
+mail_mt_comment,Discussions,,,
+mail_mt_note,Note,,,
+mail_mt_activities,Activities,,,

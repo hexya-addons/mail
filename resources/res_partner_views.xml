@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="res_partner_view_form_inherit_mail" model="ResPartner" >
+                <xpath expr="//field[@name='email']" position="replace">
+                    <field name="is_blacklisted" invisible="1"/>
+                    <label for="email" class="oe_inline"/>
+                    <div class="o_row o_row_readonly">
+                        <i class="fa fa-ban" style="color: red;" role="img" title="This email is blacklisted for mass mailing"
+                            aria-label="Blacklisted" attrs="{'invisible': [('is_blacklisted', '=', False)]}" groups="base.group_user"></i>
+                        <field name="email" widget="email"/>
+                    </div>
+                </xpath>
+                <xpath expr="//page[@name='sales_purchases']//field[@name='user_id']" position="after">
+                    <field name="message_bounce" groups="base.group_no_one"/>
+                </xpath>
+                <xpath expr="//sheet" position="after">
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </xpath>
+            </view>
+	<view id="res_partner_view_search_inherit_mail" model="ResPartner" >
+                    <filter name="inactive" position="after">
+                        <separator />
+                        <filter string="My Activities" name="activities_my"
+                                domain="[('activity_ids.user_id', '=', uid)]"/>
+                        <separator/>
+                        <filter string="Late Activities" name="activities_overdue"
+                                domain="[('activity_ids.date_deadline', '&lt;', context_today().strftime('%Y-%m-%d'))]"
+                                help="Show all records which has next action date is before today"/>
+                        <filter string="Today Activities" name="activities_today"
+                                domain="[('activity_ids.date_deadline', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                        <filter string="Future Activities" name="activities_upcoming_all"
+                                domain="[('activity_ids.date_deadline', '&gt;', context_today().strftime('%Y-%m-%d'))
+                        ]"/>
+                        <separator/>
+                    </filter>
+            </view>
+	<view id="email_template_partner" type="mail.template" name="Partner Mass Mail" >
+	<action id="base.action_partner_form" type="ir.actions.act_window" view_mode="kanban,tree,form,activity" >
+	<action id="base.action_partner_customer_form" type="ir.actions.act_window" view_mode="kanban,tree,form,activity" >
+	<action id="base.action_partner_supplier_form" type="ir.actions.act_window" view_mode="kanban,tree,form,activity" >
+	<view id="email_template_partner" type="mail.template" >
+    </data>
+</hexya>

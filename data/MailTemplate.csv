@@ -1,0 +1,3 @@
+ID,name,model_id,auto_delete,partner_to,ref_ir_act_window
+email_template_partner,Partner Mass Mail,base.model_res_partner,,${object.id},
+email_template_partner,,,,,action_partner_mass_mail
